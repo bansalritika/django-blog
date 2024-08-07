@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@font-face {
+    font-family: 'wfont_1d32d8_19459c7b05ca467ebad6718ecdc204c4';
+    src: url('path/to/font-file.woff2') format('woff2'),
+         url('static/fonts/BOOWIE.tff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white; 
+    position: relative;
+    overflow-x: hidden;
+}
+
+.cosmic-scroll {                        
+    background-color: #55efc4;
+    background-image: linear-gradient(180deg, #000000 0%, rgb(3, 71, 74) 20%, rgb(169, 216, 218) 100%);
+    min-height: 200vh;
+    width: 100%;
+    position: absolute;
+  }
+  .wixui-rich-text__text{
+    font-family: "Merriweather", serif;
+    font-weight: 100;
+    font-size: 9rem;
+    color: #efe8e8; /* White text color */
+    letter-spacing: 0.05em; /* Adjust spacing as needed */
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    line-height: 0.8;
+    margin-left: 24px; /* Adjust left margin */
+  margin-top: -30px; /* Adjust top margin */
+  position: absolute;
+  left: 20px;
+  }
+  
+ .picture{
+    opacity: 0.46;
+    margin-top: 130px;
+    margin-left: 1030px;
+ }
+  .cloud-picture-setup {
+    display: flex; 
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 0;
+}
+
+.cloud-picture-setup img {
+    height: auto; 
+    
+   
+}
+.morecloud-image{
+    margin-top: 40px;
+    margin-left: 105px; 
+    max-width: 100%;
+    z-index: 1; 
+}
+.cloud-images{
+    margin-top: 20px;
+    margin-left: -2050px;
+    width: 3200px;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3; 
+}
+.cloudsss-image{
+    object-fit: cover; /* Ensures the image covers the container */
+    position: absolute;
+    margin-left: 850px;  
+    margin-top: 20px;
+    z-index: 3; 
+}
+.manycloud-image{
+    margin-top: 320px;
+    width: 2000px;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the container */
+    position: absolute;
+    margin-left: 40px;
+    z-index: 3; 
+}
+
+
+.space-men-image {
+    width: 470px;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: floatUpDown 3s ease-in-out infinite;
+    transition: transform 0.5s ease-in-out;
+    z-index: 2;
+}
+
+.space-men-image.paused {
+    animation: none; /* Disable animation */
+}
+
+
+
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-50px);
+    }
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .cosmic-scroll {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cosmic-scroll {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .button {
+        padding: 6px 12px;
+    }
+}

@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello App</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="{% static 'static.js' %}" defer></script>
+</head>
+<body>
+    <div class="cosmic-scroll">
+        <div>
+            <h1 class="font_2 wixui-rich-text__text">
+                <span class="wixui-rich-text__text">A COSMIC</span>
+                <br class="wixui-rich-text__text">
+                scroll journey
+            </h1>
+            <div class="picture">
+                <img src="{% static 'photos/cloud-image.png' %}">
+            </div>
+        </div>
+        <div class="cloud-picture-setup">
+            <img src="{% static 'photos/more-cloud.png' %}" class="morecloud-image" alt="Clouds">
+            <img src="{% static 'photos/image.png' %}" class="cloud-images" alt="Many Clouds"> 
+            <img src="{% static 'photos/cloudss.png' %}" class="cloudsss-image" alt="More Clouds">
+            <img src="{% static 'photos/cloud-image.png' %}" class="manycloud-image" alt="More Clouds">
+            <img src="{% static 'photos/space-men.png' %}" class="space-men-image" alt="Space Men">
+        </div>
+    </div>
+</body>
+</html>
